@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GUIA GASTRONOMICA</string>
+    <string name="usuario">ingrese un usuario</string>
+    <string name="password">ingrese una contraseña</string>
+    <string name="btn_registro">REGISTRAR USUARIO</string>
+    <string name="entrar">INICIAR CESION</string>
+</resources>
