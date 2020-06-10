@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -102,6 +103,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Toast.makeText(Login.this,"BIENVENIDO",Toast.LENGTH_LONG).show();
+                    Intent pais = new Intent(getApplication(),Paises.class);
+                    startActivity(pais);
                 }else{
                     Toast.makeText(Login.this,"usuario y/o contraseña invalida",Toast.LENGTH_LONG).show();
                 }
