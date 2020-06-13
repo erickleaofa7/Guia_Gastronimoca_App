@@ -68,12 +68,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    Toast.makeText(Login.this,"se ha registrado el usuario.."+ email.getText(),Toast.LENGTH_LONG).show();
+                    Toast.makeText(Login.this,"registrado usuario: "+ email.getText(),Toast.LENGTH_LONG).show();
+                    email.getText().clear();
+                    password.getText().clear();
                 }
                     if(task.getException() instanceof FirebaseAuthUserCollisionException){
-                        Toast.makeText(Login.this,"usuario ya registrado",Toast.LENGTH_LONG).show();
-                    }else {
-                        Toast.makeText(Login.this,"no se pudo registrar",Toast.LENGTH_LONG).show();
+                        Toast.makeText(Login.this,"ya existe este usuario",Toast.LENGTH_LONG).show();
                     }
 
                 progressDialog.dismiss();

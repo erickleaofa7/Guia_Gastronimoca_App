@@ -27,7 +27,7 @@
             <ImageButton
                 android:id="@+id/btnEcuador"
                 android:layout_width="match_parent"
-                android:layout_height="284dp"
+                android:layout_height="275dp"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/ecuador" />
 
@@ -41,7 +41,7 @@
             <ImageButton
                 android:id="@+id/btnPeru"
                 android:layout_width="match_parent"
-                android:layout_height="257dp"
+                android:layout_height="248dp"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/peru" />
 
@@ -55,7 +55,7 @@
             <ImageButton
                 android:id="@+id/btnColombia"
                 android:layout_width="match_parent"
-                android:layout_height="235dp"
+                android:layout_height="225dp"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/colombia" />
 
@@ -69,7 +69,7 @@
             <ImageButton
                 android:id="@+id/btnChile"
                 android:layout_width="match_parent"
-                android:layout_height="259dp"
+                android:layout_height="250dp"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/chile" />
 
@@ -83,7 +83,7 @@
             <ImageButton
                 android:id="@+id/btnVenezuela"
                 android:layout_width="match_parent"
-                android:layout_height="244dp"
+                android:layout_height="237dp"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/venezuela" />
 
