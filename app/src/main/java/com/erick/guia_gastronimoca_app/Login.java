@@ -56,7 +56,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(this,"ingrese un email", Toast.LENGTH_LONG).show();
             return;
         }else if (TextUtils.isEmpty(pa)){
-            Toast.makeText(this,"por favor ingrese una contraseña", Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"ingrese una contraseña", Toast.LENGTH_LONG).show();
             return;
         }
         progressDialog.setMessage("registrando...");
@@ -106,7 +106,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                     Intent pais = new Intent(getApplication(),Paises.class);
                     startActivity(pais);
                 }else{
-                    Toast.makeText(Login.this,"usuario y/o contraseña invalida",Toast.LENGTH_LONG).show();
+                    Toast.makeText(Login.this,"usuario y/o contraseña incorrecto",Toast.LENGTH_LONG).show();
                 }
 
                 progressDialog.dismiss();
