@@ -3,7 +3,10 @@ package com.erick.guia_gastronimoca_app;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import com.erick.guia_gastronimoca_app.controlador.PagerController;
 import com.google.android.material.tabs.TabLayout;
@@ -12,6 +15,10 @@ public class TabPaises extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
     PagerController pagerAdapter;
+    ImageButton encebollado;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +26,9 @@ public class TabPaises extends AppCompatActivity {
         setContentView(R.layout.activity_tab_paises);
         tabLayout = findViewById(R.id.tabPais);
         viewPager = findViewById(R.id.viepager);
+        encebollado = findViewById(R.id.btnEncebollado);
+
+
 
         pagerAdapter = new PagerController(getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
@@ -28,6 +38,8 @@ public class TabPaises extends AppCompatActivity {
              viewPager.setCurrentItem(tab.getPosition());
              if(tab.getPosition()==0){
                  pagerAdapter.notifyDataSetChanged();
+
+
              }
                 if(tab.getPosition()==1){
                     pagerAdapter.notifyDataSetChanged();

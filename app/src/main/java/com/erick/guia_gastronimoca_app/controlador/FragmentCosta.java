@@ -1,5 +1,8 @@
 package com.erick.guia_gastronimoca_app.controlador;
 
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.IntentSender;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +10,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
+
+import com.erick.guia_gastronimoca_app.Ecuador.Layout_Encebollado;
+import com.erick.guia_gastronimoca_app.Paises;
 import com.erick.guia_gastronimoca_app.R;
 
 /**
@@ -25,6 +32,9 @@ public class FragmentCosta extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    View vista;
+    ImageButton encebollado;
 
     public FragmentCosta() {
         // Required empty public constructor
@@ -61,6 +71,14 @@ public class FragmentCosta extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_costa, container, false);
+        vista =inflater.inflate(R.layout.fragment_costa, container, false);
+        encebollado = vista.findViewById(R.id.btnEncebollado);
+        encebollado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        return vista;
     }
 }
