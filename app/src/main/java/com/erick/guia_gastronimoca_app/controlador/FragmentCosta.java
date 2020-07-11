@@ -11,6 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.erick.guia_gastronimoca_app.Ecuador.Layout_Ceviche;
+import com.erick.guia_gastronimoca_app.Ecuador.Layout_Encebollado;
 
 
 import com.erick.guia_gastronimoca_app.Ecuador.Layout_Encebollado;
@@ -34,7 +38,7 @@ public class FragmentCosta extends Fragment {
     private String mParam2;
 
     View vista;
-    ImageButton encebollado;
+    ImageButton encebollado, ceviche;
 
     public FragmentCosta() {
         // Required empty public constructor
@@ -76,7 +80,19 @@ public class FragmentCosta extends Fragment {
         encebollado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                   Intent ecu = new Intent(FragmentCosta.this.getActivity(),Layout_Encebollado.class);
+                   startActivity(ecu);
+                   Toast.makeText(getContext(),"BIENVENIDOS A GUAYAQUIL", Toast.LENGTH_LONG).show();
+            }
+        });
 
+        ceviche = vista.findViewById(R.id.btnCeviche);
+        ceviche.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ec = new Intent(FragmentCosta.this.getActivity(), Layout_Ceviche.class);
+                startActivity(ec);
+                Toast.makeText(getContext(),"BIENVENIDOS A GUAYAQUIL", Toast.LENGTH_LONG).show();
             }
         });
         return vista;
