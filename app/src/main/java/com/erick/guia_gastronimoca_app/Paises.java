@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Paises extends AppCompatActivity implements View.OnClickListener {
     ImageButton ecuador,peru,colombia,chile,venezuela;
@@ -25,6 +26,7 @@ public class Paises extends AppCompatActivity implements View.OnClickListener {
             case R.id.btnEcuador:
                 Intent ec = new Intent(this,TabPaises.class);
                 startActivity(ec);
+                Toast.makeText(getApplicationContext(),"BIENVENIDOS A ECUADOR",Toast.LENGTH_LONG).show();
                 break;
         }
     }

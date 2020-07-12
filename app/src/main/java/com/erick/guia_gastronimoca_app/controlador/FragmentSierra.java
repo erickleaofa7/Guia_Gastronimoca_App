@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.erick.guia_gastronimoca_app.Ecuador.Layout_Hornado;
 import com.erick.guia_gastronimoca_app.Ecuador.Layout_Yahuarlocro;
 import com.erick.guia_gastronimoca_app.R;
 
@@ -32,7 +33,7 @@ public class FragmentSierra extends Fragment {
     private String mParam2;
 
     View view;
-    ImageButton yahuarlocro;
+    ImageButton yahuarlocro, hornado;
 
     public FragmentSierra() {
         // Required empty public constructor
@@ -76,7 +77,17 @@ public class FragmentSierra extends Fragment {
             public void onClick(View v) {
                 Intent ecu = new Intent(FragmentSierra.this.getActivity(), Layout_Yahuarlocro.class);
                 startActivity(ecu);
-                Toast.makeText(getContext(),"BIENVENIDOS A QUITO", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),"CUIDAD DE QUITO", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        hornado = view.findViewById(R.id.btnHornado);
+        hornado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent hor = new Intent(FragmentSierra.this.getActivity(), Layout_Hornado.class);
+                startActivity(hor);
+                Toast.makeText(getContext(),"CUIDAD DE QUITO", Toast.LENGTH_LONG).show();
             }
         });
         return view;

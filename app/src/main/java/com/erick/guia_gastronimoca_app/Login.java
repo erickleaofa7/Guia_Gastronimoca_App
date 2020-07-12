@@ -102,7 +102,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    Toast.makeText(Login.this,"BIENVENIDO",Toast.LENGTH_LONG).show();
+                    Toast.makeText(Login.this,"GUIA GASTRONIMICA AMERICA DEL SUR",Toast.LENGTH_LONG).show();
                     Intent pais = new Intent(getApplication(),Paises.class);
                     startActivity(pais);
                 }else{

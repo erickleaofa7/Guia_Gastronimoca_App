@@ -82,7 +82,7 @@ public class FragmentCosta extends Fragment {
             public void onClick(View v) {
                    Intent ecu = new Intent(FragmentCosta.this.getActivity(),Layout_Encebollado.class);
                    startActivity(ecu);
-                   Toast.makeText(getContext(),"BIENVENIDOS A GUAYAQUIL", Toast.LENGTH_LONG).show();
+                   Toast.makeText(getContext(),"CUIDAD DE GUAYAQUIL", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -92,7 +92,7 @@ public class FragmentCosta extends Fragment {
             public void onClick(View v) {
                 Intent ec = new Intent(FragmentCosta.this.getActivity(), Layout_Ceviche.class);
                 startActivity(ec);
-                Toast.makeText(getContext(),"BIENVENIDOS A GUAYAQUIL", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(),"CUIDAD DE GUAYAQUIL", Toast.LENGTH_LONG).show();
             }
         });
         return vista;

@@ -34,4 +34,10 @@
         android:text="HORNADO"
         android:textSize="18sp" />
 
+    <ImageButton
+        android:id="@+id/btnHornado"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:src="@drawable/h3" />
+
 </LinearLayout>
