@@ -15,7 +15,7 @@ public class TabPaises extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager viewPager;
     PagerController pagerAdapter;
-    ImageButton encebollado;
+
 
 
 
