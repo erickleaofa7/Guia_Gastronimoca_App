@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< Updated upstream
         <activity android:name=".Peru.Tab_Peru"></activity>
+=======
+        <activity android:name=".Colombia.Layout_BandejaPaisa"></activity>
+        <activity android:name=".Venezuela.Layout_Arepa" />
+        <activity android:name=".Peru.Tab_Peru" />
+>>>>>>> Stashed changes
         <activity android:name=".Ecuador.Layout_Hornado" />
         <activity android:name=".Ecuador.Layout_Yahuarlocro" />
         <activity android:name=".Ecuador.Layout_Ceviche" />
